@@ -36,7 +36,10 @@ Theo [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md), bốn lớp là car = 0, truc
 | mean_iou_of_matches |0.8465| |
 | passed |false| |
 
-Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
+[Kết quả chấm nhãn trong repo](../../outputs/annotation_evaluation.json). Bản trên repo tại thời điểm đối chiếu vẫn ghi kết quả lần đầu. Lần đầu, mean IoU của các box đã khớp vượt ngưỡng 0.70, còn F1 thấp hơn ngưỡng 0.80.
+- drive_002: 44 box đã vẽ, 13 box gold và 11 box khớp. Ưu tiên rà các box chưa khớp để xem có box trùng, sai lớp, lệch vị trí hoặc ngoài phạm vi hay không.
+- drive_041: 24 box gold và 5 box khớp. Ưu tiên rà xe có thể bị sót và các box có thể sai lớp hoặc lệch vị trí.
+- Không có rework.
 
 ## 5. Kết quả YOLO
 
