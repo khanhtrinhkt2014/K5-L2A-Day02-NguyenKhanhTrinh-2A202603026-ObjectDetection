@@ -4,12 +4,12 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
-- Link Colab đã chạy:
+- Họ tên: Nguyễn Khánh Trình
+- MSSV: 2A202603026
+- Email: 26ai.trinhnk@vinuni.edu.vn
+- Lớp: 2A-LAB-E402
+- Link repo bài làm: https://github.com/khanhtrinhkt2014/K5-L2A-Day02-NguyenKhanhTrinh-2A202603026-ObjectDetection.git
+- Link Colab đã chạy: https://colab.research.google.com/github/khanhtrinhkt2014/K5-L2A-Day02-NguyenKhanhTrinh-2A202603026-ObjectDetection/blob/main/notebooks/day2_annotation_to_yolo.ipynb
 
 ## 2. Schema và mini guideline
 
