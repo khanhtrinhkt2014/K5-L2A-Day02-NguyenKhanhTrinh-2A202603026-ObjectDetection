@@ -75,7 +75,13 @@ Trả lời bốn câu hỏi cuối notebook:
 ## 7. Tự đánh giá theo rubric
 
 Đối chiếu [RUBRIC.md](../../RUBRIC.md): phần nào đã có kết quả, phần nào còn thiếu hoặc chưa kiểm được. Không tự nhận hoàn thành bước chưa chạy.
+Định dạng YOLO: Checker xác nhận 50/50 file nhãn hợp lệ về cấu trúc.
+Chất lượng nhãn: Mean IoU của các box đã ghép là 0.8465. Em đã ghi nhận một trường hợp xe van bị gán nhầm truck. Danh sách Self-QC hiện có 4 ảnh, còn cần bổ sung ít nhất 6 ảnh đã rà để đủ yêu cầu.
+Mini guideline: Đã ghi định nghĩa bốn lớp, quy tắc vẽ box và ba ca mơ hồ có tên ảnh. Một số quyết định vẫn cần xác nhận.
+Gold-set QC: F1 = 0.5459 và mean IoU = 0.8465. Script báo passed: false theo ngưỡng F1 ≥ 0.80 trong rubric. Kết quả đạt ngưỡng F1 > 0.50 theo thông báo cập nhật của Lab Coach.
+Pipeline YOLO: Đã đánh giá trên 10 ảnh eval, với mAP50 = 0.2723 và mAP50–95 = 0.2017. Trong drive_054.jpg, YOLO phát hiện chiếc xe con màu đỏ nhưng nhầm lớp thành van. Cần bổ sung link Colab đã lưu kết quả và kiểm tra các link ảnh trên GitHub.
 
 ## 8. Công cụ AI và tài liệu tham khảo
 
 Ghi công cụ đã dùng, dùng ở bước nào và phần đã tự kiểm tra; không dùng thì ghi rõ. Liệt kê nguồn ngoài repo được sử dụng. Không ghi mật khẩu/token hoặc đính kèm gold train.
+ChatGPT: hỗ trợ report, đọc kết quả gold QC, sử dụng Git/Colab và soạn báo cáo, nhận xét mô hình cần đối chiếu với bài làm thực tế.
