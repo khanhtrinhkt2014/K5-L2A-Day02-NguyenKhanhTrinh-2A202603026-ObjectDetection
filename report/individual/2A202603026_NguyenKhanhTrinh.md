@@ -20,21 +20,21 @@ Theo [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md), bốn lớp là car = 0, truc
 - Số file nhãn train: 50
 - Kết quả checker và lỗi đã xử lý: 50/50 file nhãn hợp lệ về cấu trúc. Trên Windows, lệnh python3 không được nhận diện. Chạy lại bằng python tools/check_yolo_labels.py thì checker báo đạt.
 - Danh sách ít nhất 10 ảnh đã rà bằng mắt:drive_001.jpg, drive_002.jpg, drive_009.jpg, drive_010.jpg, drive_011.jpg, drive_015.jpg, drive_020.jpg, drive_029.jpg, drive_030.jpg, drive_031.jpg
-- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
-- Commit khóa nhãn ban đầu:
+- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: drive_001.jpg — Xe ở [sát trái gần cổng] bị gán nhầm truck. Đã đổi nhãn thành van vì xe có thân liền dạng hộp và khoang sau liền với cabin. Giữ nguyên box vì box đã ôm sát phần xe nhìn thấy.
+- Commit khóa nhãn ban đầu:38918c4d2e6be97f8518d5dcbb3a98f64f8fd41c
 
 ## 4. Gold QC và rework
 
 | Chỉ số | Trước sửa | Sau sửa nếu có |
 |---|---:|---:|
-| TP | | |
-| FP | | |
-| FN | | |
-| Precision | | |
-| Recall | | |
-| F1 | | |
-| mean_iou_of_matches | | |
-| passed | | |
+| TP |458| |
+| FP |567| |
+| FN |195| |
+| Precision |0.4468| |
+| Recall |0.7014| |
+| F1 |0.5459| |
+| mean_iou_of_matches |0.8465| |
+| passed |false| |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
