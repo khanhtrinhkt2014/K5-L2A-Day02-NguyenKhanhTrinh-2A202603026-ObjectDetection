@@ -13,13 +13,13 @@
 
 ## 2. Schema và mini guideline
 
-Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ hồ đã quyết định, cách áp dụng schema và phần cần giảng viên làm rõ.
+Theo [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md), bốn lớp là car = 0, truck = 1, bus = 2 và van = 3. Mỗi xe nhận diện được có một box ôm sát phần nhìn thấy. Nếu xe bị cắt khung, cạnh box phía bị cắt chạm mép ảnh. Khi nhiều xe che nhau, xét riêng từng xe và cho phép các box chồng lên nhau.
 
 ## 3. Annotation và self-QC
 
-- Số file nhãn train:
-- Kết quả checker và lỗi đã xử lý:
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt:
+- Số file nhãn train: 50
+- Kết quả checker và lỗi đã xử lý: 50/50 file nhãn hợp lệ về cấu trúc. Trên Windows, lệnh python3 không được nhận diện. Chạy lại bằng python tools/check_yolo_labels.py thì checker báo đạt.
+- Danh sách ít nhất 10 ảnh đã rà bằng mắt:drive_001.jpg, drive_002.jpg, drive_009.jpg, drive_010.jpg, drive_011.jpg, drive_015.jpg, drive_020.jpg, drive_029.jpg, drive_030.jpg, drive_031.jpg
 - Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa:
 - Commit khóa nhãn ban đầu:
 
